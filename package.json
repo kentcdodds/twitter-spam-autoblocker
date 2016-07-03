@@ -1,0 +1,19 @@
+{
+  "name": "twitter-spam-autoblocker",
+  "version": "1.0.0",
+  "description": "Because we don't have time for spam, nor patience for ignoring it",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kentcdodds/twitter-spam-autoblocker.git"
+  },
+  "author": "Kent C. Dodds <kent@doddsfamily.us> (http://kentcdodds.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kentcdodds/twitter-spam-autoblocker/issues"
+  },
+  "homepage": "https://github.com/kentcdodds/twitter-spam-autoblocker#readme"
+}
