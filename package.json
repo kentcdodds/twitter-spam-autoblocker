@@ -1,6 +1,7 @@
 {
   "name": "twitter-spam-autoblocker",
   "version": "1.0.0",
+  "private": true,
   "description": "Because we don't have time for spam, nor patience for ignoring it",
   "main": "index.js",
   "scripts": {

@@ -1,0 +1,73 @@
+{
+  "name": "is-spam-twitter-account",
+  "version": "0.0.0-semantically-released",
+  "description": "Takes information about a twitter account and gives a score of the liklihood of it being spam",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "package-scripts",
+    "test": "package-scripts test"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [],
+  "author": "Kent C. Dodds <kent@doddsfamily.us> (http://kentcdodds.com/)",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "all-contributors-cli": "^3.0.0",
+    "ava": "^0.14.0",
+    "babel-cli": "^6.7.7",
+    "babel-eslint": "^6.0.4",
+    "babel-preset-es2015-node6": "0.2.0",
+    "babel-preset-es2016": "6.11.0",
+    "babel-preset-stage-2": "^6.5.0",
+    "babel-register": "^6.7.2",
+    "codecov": "^1.0.1",
+    "commitizen": "^2.8.1",
+    "condition-node-version": "^1.3.0",
+    "cz-conventional-changelog": "^1.1.6",
+    "eslint": "^2.9.0",
+    "eslint-config-kentcdodds": "^6.2.1",
+    "ghooks": "^1.2.1",
+    "nyc": "^6.4.0",
+    "opt-cli": "^1.4.2",
+    "p-s": "^0.4.0",
+    "rimraf": "^2.5.2",
+    "validate-commit-msg": "^2.6.1"
+  },
+  "eslintConfig": {
+    "extends": "kentcdodds/es-next"
+  },
+  "ava": {
+    "require": [
+      "babel-register"
+    ]
+  },
+  "nyc": {
+    "reporter": [
+      "lcov",
+      "text",
+      "html"
+    ]
+  },
+  "config": {
+    "ghooks": {
+      "commit-msg": "opt --in commit-msg --exec \"validate-commit-msg\"",
+      "pre-commit": "opt --in pre-commit --exec \"npm start validate\""
+    },
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kentcdodds/twitter-spam-autoblocker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kentcdodds/twitter-spam-autoblocker/issues"
+  },
+  "homepage": "https://github.com/kentcdodds/twitter-spam-autoblocker#readme"
+}
