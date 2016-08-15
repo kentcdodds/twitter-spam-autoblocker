@@ -11,7 +11,8 @@ Thanks for being willing to contribute!
 2. `$ npm install` to install dependencies
 3. `$ npm start validate` to validate you've got it working
 4. Create a branch for your PR
-
+5. `$cd web` to enter client directory
+6. `$npm install`
 This project uses [`p-s`][p-s] and you can run `npm start` to see what scripts are available.
 
 ## Add yourself as a contributor

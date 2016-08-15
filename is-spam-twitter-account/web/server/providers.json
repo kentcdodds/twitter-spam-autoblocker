@@ -1,0 +1,15 @@
+{
+      "twitter-login": {
+    "provider": "twitter",
+    "authScheme": "oauth",
+    "module": "passport-twitter",
+    "callbackURL": "/auth/twitter/callback",
+    "authPath": "/auth/twitter",
+    "callbackPath": "/auth/twitter/callback",
+    "successRedirect": "/authed.html",
+    "failureRedirect": "/",
+    "consumerKey": "{twitter-consumer-key}",
+    "consumerSecret": "{twitter-consumer-secret}",
+    "failureFlash": true
+  }
+}
